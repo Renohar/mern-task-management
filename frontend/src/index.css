@@ -1,0 +1,227 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+header h1{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+}
+@media (max-width : 576px){
+    header h1{
+        font-size: 1.2rem;
+    }
+}
+
+header a{
+    text-decoration: none;
+}
+
+
+@media (min-width : 1024px){
+    .tm-links{
+        padding-right: 25px;
+        padding-top: 5px;
+    }
+}
+
+
+
+header .tm-links ul{
+display: flex;
+gap: 15px;
+padding-left: 0px;
+}
+
+header .tm-links ul li{
+    list-style: none;
+    color: #000;
+    cursor: pointer;
+}
+
+header .tm-links ul li:hover{
+    color: darkslateblue;
+}
+
+.home-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    flex-direction: row;
+}
+
+
+.home-text{
+    width: 50%;
+    
+}
+
+.home-text > div{
+    padding-left:  20px
+}
+
+
+
+.home-image {
+    width: 50%;
+    text-align: center;
+}
+
+
+.home-image img{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+@media (max-width : 576px){
+    .home-page{
+        flex-direction: column;
+    }
+
+    .home-text{
+        width: 100%;
+        
+    }
+    .home-image{
+        width: 100%
+    }
+    .home-text > div{
+       text-align: center;
+    }
+    
+}
+
+.login-page{
+    padding: 20px;
+    text-align: center;
+}
+
+.login-page form {
+    padding-top: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.login-page form label{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.login-page form label input{
+    margin-top: 10px;
+    height: 30px;
+    border: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.login-page form input[type="submit"]{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 30px;
+    border: none;
+    margin-top: 15px;
+    background-color: darkslateblue;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    width: 100%;
+}
+
+.login-page p {
+    color: red;
+}
+
+
+.account-page{
+    padding: 20px;
+}
+
+.account-page .add-task{
+    margin-top: 15px;
+}
+
+.account-page .add-task a{
+max-width: 600px;
+width: 100%;
+margin: auto;
+display: block;
+cursor: pointer;
+background-color: darkslateblue;
+padding: 10px 0px;
+text-align: center;
+border-radius: 5px;
+color: #fff;
+text-decoration: none;
+}
+
+
+.account-page .task-table table{
+    border-collapse: collapse;
+    text-align: center;
+    min-width: 600px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+
+.account-page .task-table table , .account-page .task-table table th, .account-page .task-table table td {
+    border: 1px solid black;
+}
+
+table th , table td{
+    padding: 10px;
+}
+
+@media (max-width : 650px){
+    .task-table{
+        max-width: 500px !important;;
+        overflow-x: scroll;
+    }
+    table th , table td{
+        padding: 5px;
+    }
+}
+
+table tbody td:last-child  a svg{
+    padding-right: 15px;
+    color: darkslateblue;
+    font-size: 20px;
+}
+
+table tbody td:last-child svg{
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+}
+
+.add-task{
+    padding: 20px;
+    text-align: center;
+}
+
+input[type="date"]{
+    padding-right: 20px;
+}
+
+.abcs{
+    text-decoration: line-through;
+}
