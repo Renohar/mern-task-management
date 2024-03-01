@@ -23,7 +23,7 @@ const Signup = () => {
     const handleSubmit = async(e) => {
         e.preventDefault()
         try{
-            const response = await fetch("http://localhost:5000/api/user/register",{
+            const response = await fetch("https://mern-task-management.vercel.app/api/user/register",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
@@ -56,7 +56,7 @@ const Signup = () => {
     
     const fetchUsers = async () => {
         try{
-            const response = await fetch("http://localhost:5000/api/user/register")
+            const response = await fetch("https://mern-task-management.vercel.app/api/user/register")
             const data = await response.json()
            
         }

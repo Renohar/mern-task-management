@@ -27,7 +27,7 @@ const AddTask = () => {
     const taskSubmit = async(e) => {
         e.preventDefault();
         try{
-            const response = await fetch("http://localhost:5000/api/task/create",{
+            const response = await fetch("https://mern-task-management.vercel.app/api/task/create",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"

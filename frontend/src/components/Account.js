@@ -13,7 +13,7 @@ const Account = () => {
     
     const fetchTasks = async() => {
         try{
-            const response = await fetch(`http://localhost:5000/api/task/tasks/${userID}`)
+            const response = await fetch(`https://mern-task-management.vercel.app/api/task/tasks/${userID}`)
             const data = await response.json()
             setTasks(data)
         }
@@ -27,7 +27,7 @@ const Account = () => {
 
     const handleDelete = async (id) => {
         try{
-            const response = await fetch(`http://localhost:5000/api/task/delete/${id}`,{
+            const response = await fetch(`https://mern-task-management.vercel.app/api/task/delete/${id}`,{
                 method: "DELETE"
             })
             fetchTasks()
@@ -39,7 +39,7 @@ const Account = () => {
 
     const handleComplete = async (id) => {
         try{
-            const response = await fetch(`http://localhost:5000/api/task/complete/${id}`,{
+            const response = await fetch(`https://mern-task-management.vercel.app/api/task/complete/${id}`,{
                 method:"PUT",
                 headers:{
                     "Content-Type":"application/json"
